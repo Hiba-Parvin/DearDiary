@@ -1,0 +1,26 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #000000;
+}
+
+a{
+    text-decoration: none;
+    color: #ffc727;
+    font-weight: bold;
+}
+
+.ylbtn{
+    background-color: #ffc727;
+    font-weight: 500 ;
+    font-size: large;
+}
+
+.ylbtn:hover{
+    background-color:#fdd66a;
+    box-shadow: 0px 15px 20px rgba(255, 199, 39,.3);
+    color: #fffbe7;
+    transform: translateY(-1.8px);
+}

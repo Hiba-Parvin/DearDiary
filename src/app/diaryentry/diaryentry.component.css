@@ -1,0 +1,34 @@
+.page{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Transition to a bigger shadow on hover */
+  .page:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  a{
+    text-decoration: none;
+  }
+.navfix{
+  position:sticky;
+  top: 0;
+}
+.part1{
+  margin-left: 10%;
+}
+.part2{
+  border: solid 0.1vh;
+  padding: 5%;
+  margin: 3%;
+  text-align: justify;
+}
+.part3{
+  padding-left: 5%;
+}
+  .imgfix{
+    position:fixed;
+     bottom: 1%;
+     height: auto;
+     width: 30%;
+  }
