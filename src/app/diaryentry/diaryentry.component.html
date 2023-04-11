@@ -25,7 +25,7 @@
       <div class="d-flex align-items-center">
         <!-- Icon -->
         
-        <a class="text-reset me-3" href="#"><i class="fa-solid fa-angles-left"></i>  Back
+        <a class="text-reset me-3" href="/dashboard"><i class="fa-solid fa-angles-left"></i>  Back
      
         </a>
 
@@ -39,9 +39,12 @@
 <div class="container-fluid">
     <div class="row part1">
         <div class="col part2">
-<h5>Dear Diary,</h5>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet sapiente itaque iure expedita blanditiis minima? Maxime obcaecati officia iste unde ea aperiam fugiat praesentium asperiores iusto! Praesentium, laborum ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatum esse repellendus. Maiores corrupti mollitia iste sint laboriosam soluta praesentium magnam, labore, enim, in facilis. Dignissimos odit nisi ullam sit.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur a quasi quia, beatae quos sit quae officia atque corporis? Adipisci qui dolorum consectetur voluptatum nostrum voluptate doloribus aliquam architecto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet sapiente itaque iure expedita blanditiis minima? Maxime obcaecati officia iste unde ea aperiam fugiat praesentium asperiores iusto! Praesentium, laborum ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatum esse repellendus. Maiores corrupti mollitia iste sint laboriosam soluta praesentium magnam, labore, enim, in facilis. Dignissimos odit nisi ullam sit.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur a quasi quia, beatae quos sit quae officia atque corporis? Adipisci qui dolorum consectetur voluptatum nostrum voluptate doloribus aliquam architecto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet sapiente itaque iure expedita blanditiis minima? Maxime obcaecati officia iste unde ea aperiam fugiat praesentium asperiores iusto! Praesentium, laborum ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatum esse repellendus. Maiores corrupti mollitia iste sint laboriosam soluta praesentium magnam, labore, enim, in facilis. Dignissimos odit nisi ullam sit.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur a quasi quia, beatae quos sit quae officia atque corporis? Adipisci qui dolorum consectetur voluptatum nostrum voluptate doloribus aliquam architecto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet sapiente itaque iure expedita blanditiis minima? Maxime obcaecati officia iste unde ea aperiam fugiat praesentium asperiores iusto! Praesentium, laborum ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatum esse repellendus. Maiores corrupti mollitia iste sint laboriosam soluta praesentium magnam, labore, enim, in facilis. Dignissimos odit nisi ullam sit.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur a quasi quia, beatae quos sit quae officia atque corporis? Adipisci qui dolorum consectetur voluptatum nostrum voluptate doloribus aliquam architecto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet sapiente itaque iure expedita blanditiis minima? Maxime obcaecati officia iste unde ea aperiam fugiat praesentium asperiores iusto! Praesentium, laborum ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatum esse repellendus. Maiores corrupti mollitia iste sint laboriosam soluta praesentium magnam, labore, enim, in facilis. Dignissimos odit nisi ullam sit.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur a quasi quia, beatae quos sit quae officia atque corporis? Adipisci qui dolorum consectetur voluptatum nostrum voluptate doloribus aliquam architecto?</p> -->
-
+          <div class="part2sub"  *ngFor="let i of journalArray">
+       
+               <h6>{{i.date}}</h6>
+<h6>Dear Diary,</h6>
+<p>{{i.diaryentry}}</p>
+</div>
         </div>
         <div class="col part3">
             <img src="./assets/imgfix.png"

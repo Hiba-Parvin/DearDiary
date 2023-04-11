@@ -24,15 +24,19 @@
       <!-- Right elements -->
       <div class="d-flex align-items-center">
         <!-- Icon -->
-        <a class="text-reset me-3" href="#">Diary
+        <a class="text-reset me-3" routerLink="/diaryentry">Diary
             <i class="fa-solid fa-book"></i>
         </a>
-        <a class="text-reset me-3" href="#">Delete
+        <!-- <a class="text-reset me-3" href="#">Delete
             <i class="fa-solid fa-trash-can"></i>
-        </a>
-        <a class="text-reset me-3" href="#">Logout
-            <i class="fa-solid fa-right-from-bracket"></i>
-        </a>
+        </a> -->
+        <button (click)="logout()" class="me-3">Delete
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+        <button (click)="logout()" class="me-3">Logout
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+
 
       </div>
       <!-- Right elements -->
@@ -50,11 +54,11 @@
                     <!-- Email input -->
                     <h5 class="">Dear Diary,</h5>
                     <div class="mb-2">
-                        <textarea name="" id="" cols="90" rows="23"></textarea>
+                        <textarea (change)="diarypost($event)" name="diaryentry" id="diaryentry" cols="90" rows="23"></textarea>
                     </div>
 
                     <!-- Submit button -->
-                    <button type="submit" class="ylbtn btn btn-block ps-4 pe-4">Post</button>
+                    <button (click)="diary()" type="submit" class="ylbtn btn btn-block ps-4 pe-4">Post</button>
  
                </form>
             </div>

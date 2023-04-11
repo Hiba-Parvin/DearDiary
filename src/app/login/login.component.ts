@@ -28,7 +28,7 @@ export class LoginComponent {
         localStorage.setItem("currentuser",result.currentuser)
         localStorage.setItem("token",JSON.stringify(result.token))
         alert(result.message)
-        this.router.navigateByUrl("register")
+        this.router.navigateByUrl("dashboard")
       },
       result=>{
         alert(result.error.message)
